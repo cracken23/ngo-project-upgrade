@@ -24,6 +24,7 @@
     "postcss": "8.4.32"
   },
   "scripts": {
+    "build:dev": "vite build --mode development",
     "predeploy": "npm run build",
     "deploy": "npm run addDomain && gh-pages -d build",
     "start": "craco start",
