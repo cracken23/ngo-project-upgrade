@@ -1,12 +1,12 @@
+
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import {
   BrowserRouter as Router,
   Route,
   Switch,
   Redirect,
 } from "react-router-dom";
-import { createRoot } from "react-dom/client";
 
 import "./style.css";
 import Home from "./views/home";
@@ -19,36 +19,27 @@ import Footer from "./components/footer";
 import sucess from "./views/sucess";
 import Canceled from "./views/Canceled";
 import Info from "./views/Info"
-//optional
-import Admin from "./views/Admin/Admin";
-import SideBar from "./views/Admin/SideBar";
 import { Redir } from "./views/Redir";
 
 const App = () => {
-  
-    return (
-      
-      <Router>
-        <Header />
-        <Switch>
-          <Route component={Home} exact path="/Home" />
-          <Route component={Contact} exact path="/contact" />
-          <Route component={About} exact path="/about" />
-          <Route component={Donation} exact path="/donation" />
-          <Route component={sucess} exact path="/Success" />
-          <Route component={Canceled} exact path="/Canceled" />
-          <Route component={Redir} exact path="/"/>
-          <Route component={Info} exact path="/info" />
-         
-
-          <Route component={NotFound} path="**" />
-{/* test */}
-          <Redirect to="**" />
-        </Switch>
-        <Footer />
-      </Router>
-    );
-  
+  return (
+    <Router>
+      <Header />
+      <Switch>
+        <Route component={Home} exact path="/Home" />
+        <Route component={Contact} exact path="/contact" />
+        <Route component={About} exact path="/about" />
+        <Route component={Donation} exact path="/donation" />
+        <Route component={sucess} exact path="/Success" />
+        <Route component={Canceled} exact path="/Canceled" />
+        <Route component={Redir} exact path="/"/>
+        <Route component={Info} exact path="/info" />
+        <Route component={NotFound} path="**" />
+        <Redirect to="**" />
+      </Switch>
+      <Footer />
+    </Router>
+  );
 };
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -60,4 +51,5 @@ document.addEventListener("DOMContentLoaded", function () {
     console.error("Element with id 'app' not found");
   }
 });
+
 export default App;
