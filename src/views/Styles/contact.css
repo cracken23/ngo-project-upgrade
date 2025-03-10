@@ -1,0 +1,314 @@
+.contact-container {
+  gap: var(--dl-space-space-twounits);
+  width: 100%;
+  display: flex;
+  /* overflow: hidden; */
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-container01 {
+  flex: 0 0 auto;
+  
+  height: 655px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-left: var(--dl-space-space-oneandhalfunits);
+  justify-content: center;
+}
+.contact-container02 {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.contact-container03 {
+  gap: var(--dl-space-space-unit);
+  flex: 0 0 auto;
+  width: 50%;
+  /* height: 468px; */
+  display: flex;
+  align-self: center;
+  /* align-items: flex-start; */
+  flex-direction: column;
+}
+.contact-container04 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 645px;
+  height: 94px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-text {
+  align-self: flex-start;
+  font-style: normal;
+  font-weight: 600;
+}
+.contact-text01 {
+  font-size: 20px;
+}
+.contact-container05 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 645px;
+  height: 94px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-text02 {
+  align-self: flex-start;
+  font-style: normal;
+  font-weight: 600;
+}
+.contact-text03 {
+  font-size: 20px;
+}
+.contact-container06 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 645px;
+  height: 94px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-text04 {
+  align-self: flex-start;
+  font-style: normal;
+  font-weight: 600;
+}
+.contact-text07 {
+  font-size: 20px;
+}
+.contact-container07 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 645px;
+  height: 94px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-text08 {
+  align-self: flex-start;
+  font-style: normal;
+  font-weight: 600;
+}
+.contact-text11 {
+  font-size: 20px;
+}
+.contact-container08 {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  height: 764px;
+  display: flex;
+  align-self: flex-start;
+  margin-top: 0px;
+  align-items: center;
+  /* margin-left: var(--dl-space-space-twounits);
+  margin-right: var(--dl-space-space-twounits); */
+  margin-bottom: 0px;
+  justify-content: center;
+}
+.contact-container09 {
+  flex: 0 0 auto;
+  width: 50%;
+  
+  height: 100%;
+  /* display: flex; */
+  align-items: flex-start;
+  flex-direction: column;
+}
+.contact-container10 {
+  flex: 0 0 auto;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-form {
+  gap: var(--dl-space-space-unit);
+  width: 388px;
+  height: 100%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-text12 {
+  align-self: flex-start;
+  font-style: normal;
+  font-weight: 700;
+}
+.contact-text13 {
+  text-align: left;
+}
+.contact-text14 {
+  align-self: flex-start;
+}
+.contact-textinput {
+  align-self: flex-start;
+}
+.contact-text17 {
+  align-self: flex-start;
+}
+.contact-textinput1 {
+  align-self: flex-start;
+}
+.contact-text18 {
+  align-self: flex-start;
+}
+.contact-textinput2 {
+  align-self: flex-start;
+}
+.contact-text19 {
+  align-self: flex-start;
+}
+.contact-textarea {
+  width: 252px;
+  height: 103px;
+  align-self: flex-start;
+}
+.contact-button {
+  align-self: flex-start;
+  background-color: #044ddc;
+}
+@media(max-width: 987px) {
+  .contact-container {
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-container01 {
+    margin-bottom: 0px;
+    text-align: center;
+    /* justify-content: flex-start; */
+  }
+  .contact-container02 {
+    display: none;
+    flex: 1;
+    width: 240px;
+    height: auto;
+    align-items: center;
+  }
+  .contact-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+  }
+  .contact-container08 {
+    padding-top: var(--dl-space-space-twounits);
+    justify-content: flex-start;
+  }
+}
+@media(max-width: 767px) {
+  .contact-container {
+    align-items: center;
+    /* justify-content: flex-start; */
+  }
+  .contact-button {
+    width: 100%;;
+  }
+  .contact-container01 {
+    width: 766px;
+    margin: 0px;
+    align-self: center;
+    align-items: center;
+    /* justify-content: flex-start; */
+  }
+  .contact-container08 {
+    flex: 1;
+    margin-bottom: 32px;
+    align-self: center;
+    padding-top: var(--dl-space-space-oneandhalfunits);
+    padding-left: 0px;
+    padding-right: 0px;
+    flex-direction: column;
+    padding-bottom: 0px;
+  }
+  /* .contact-container09 {
+    display: none;
+  } */
+  .contact-form {
+    width: 402px;
+    height: 527px;
+  }
+  .contact-text13 {
+    text-align: center;
+  }
+  .contact-textinput {
+    width: 100%;
+    height: 50px;
+  }
+  .contact-textinput1 {
+    width: 100%;
+  }
+  .contact-textinput2 {
+    width: 100%;
+  }
+  .contact-textarea {
+    width: 100%;
+  }
+}
+@media(max-width: 479px) {
+  .contact-container01 {
+    width: 479px;
+  }
+  .contact-container04 {
+    width: 479px;
+  }
+  .contact-text {
+    align-self: center;
+  }
+  .contact-text01 {
+    text-align: center;
+  }
+  .contact-container05 {
+    width: 478px;
+  }
+  .contact-text02 {
+    align-self: center;
+  }
+  .contact-text03 {
+    text-align: center;
+  }
+  .contact-container06 {
+    width: 478px;
+  }
+  .contact-text04 {
+    align-self: center;
+  }
+  .contact-text07 {
+    text-align: center;
+  }
+  .contact-container07 {
+    width: 478px;
+  }
+  .contact-text08 {
+    align-self: center;
+  }
+  .contact-text11 {
+    text-align: center;
+  }
+}

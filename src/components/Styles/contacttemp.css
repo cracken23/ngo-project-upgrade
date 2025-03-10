@@ -1,0 +1,107 @@
+.contacttemp-container {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 655px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-left: var(--dl-space-space-oneandhalfunits);
+  justify-content: center;
+}
+.contacttemp-container1 {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  flex-direction: column;
+  justify-content: center;
+}
+.contacttemp-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contacttemp-container2 {
+  gap: var(--dl-space-space-unit);
+  flex: 0 0 auto;
+  width: 692px;
+  height: 468px;
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.contacttemp-container3 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 645px;
+  height: 94px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contacttemp-text {
+  align-self: flex-start;
+  font-style: normal;
+  font-weight: 600;
+}
+.contacttemp-text01 {
+  font-size: 20px;
+}
+.contacttemp-container4 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 645px;
+  height: 94px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contacttemp-text02 {
+  align-self: flex-start;
+  font-style: normal;
+  font-weight: 600;
+}
+.contacttemp-text03 {
+  font-size: 20px;
+}
+.contacttemp-container5 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 645px;
+  height: 94px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contacttemp-text04 {
+  align-self: flex-start;
+  font-style: normal;
+  font-weight: 600;
+}
+.contacttemp-text07 {
+  font-size: 20px;
+}
+.contacttemp-container6 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 645px;
+  height: 94px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contacttemp-text08 {
+  align-self: flex-start;
+  font-style: normal;
+  font-weight: 600;
+}
+.contacttemp-text11 {
+  font-size: 20px;
+}

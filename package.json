@@ -1,0 +1,56 @@
+{
+  "name": "Geriatric Care and Health Foundation",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://geriatrichcf.com/",
+  "dependencies": {
+    "@craco/craco": "^5.9.0",
+    "@lottiefiles/react-lottie-player": "3.4.7",
+    "@react-google-maps/api": "^2.19.3",
+    "axios": "^1.6.8",
+    "gh-pages": "^6.1.1",
+    "prop-types": "15.7.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^5.0.1",
+    "react-leaflet": "^4.2.1",
+    "react-router-dom": "^5.2.0",
+    "react-spinners": "^0.13.8",
+    "resolve-url-loader": "^5.0.0"
+  },
+  "overrides": {
+    "nth-check": "2.1.1",
+    "postcss": "8.4.32"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "npm run addDomain && gh-pages -d build",
+    "start": "craco start",
+    "addDomain":"echo geriatrichcf.com > build/CNAME",
+    "build": "craco build && cp build/index.html build/404.html",
+    "test": "craco test --env=jsdom --transformIgnorePatterns \"node_modules/(?!axios)/\"",
+    "eject": "craco eject"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
+    "react-scripts": "^5.0.1",
+    "tailwindcss": "^3.4.1"
+  }
+}
