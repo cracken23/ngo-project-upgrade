@@ -18,7 +18,7 @@ import Header from "./components/headernew";
 import Footer from "./components/footer";
 import sucess from "./views/sucess.jsx";
 import Canceled from "./views/Canceled.jsx";
-import Info from "./views/Info";
+import Info from "./views/Info.jsx";
 import { Redir } from "./views/Redir.jsx";
 
 const App = () => {
