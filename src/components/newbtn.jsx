@@ -6,6 +6,8 @@ import './Styles/newbtn.css'
 
 const Newbtn = (props) => {
   const history = useHistory();
+  const path = props.onClick || '/';
+  const isActive = window.location.pathname === path;
 
   const handleRedirect = (path) => {
     history.push(path);
@@ -14,13 +16,19 @@ const Newbtn = (props) => {
   return (
     <div className={`newbtn-container ${props.rootClassName}`}>
       <button 
-        onClick={() => handleRedirect(props.onClick)} 
+        onClick={() => handleRedirect(path)} 
         type={props.buttonType} 
-        className="newbtn-button button tw-bg-transparent tw-text-neutral-dark tw-font-medium tw-border-none tw-px-4 tw-py-2 tw-rounded-md hover:tw-bg-[#f0f0f0] hover:tw-scale-105 tw-duration-300 tw-transition-all"
+        className={`newbtn-button group tw-relative tw-bg-transparent tw-px-4 tw-py-2 tw-rounded-md tw-transition-all tw-duration-300 tw-font-medium
+          ${isActive 
+            ? 'tw-text-[#4CCD99] tw-font-semibold' 
+            : 'tw-text-neutral-dark hover:tw-text-[#ea5507]'
+          }`}
       >
         <span className="tw-relative">
           {props.button1}
-          <span className="tw-absolute tw-bottom-0 tw-left-0 tw-w-0 tw-h-0.5 tw-bg-[#4CCD99] tw-transition-all tw-duration-300 group-hover:tw-w-full"></span>
+          <span className={`tw-absolute tw-bottom-0 tw-left-0 tw-h-0.5 tw-bg-[#4CCD99] tw-transition-all tw-duration-300 
+            ${isActive ? 'tw-w-full' : 'tw-w-0 group-hover:tw-w-full'}`}>
+          </span>
         </span>
       </button>
     </div>
