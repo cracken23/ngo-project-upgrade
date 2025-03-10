@@ -17,9 +17,9 @@ import NotFound from "./views/not-found.jsx";
 import Header from "./components/headernew";
 import Footer from "./components/footer";
 import sucess from "./views/sucess.jsx";
-import Canceled from "./views/Canceled";
+import Canceled from "./views/Canceled.jsx";
 import Info from "./views/Info";
-import { Redir } from "./views/Redir";
+import { Redir } from "./views/Redir.jsx";
 
 const App = () => {
   return (
