@@ -10,26 +10,6 @@ const Admin = () => {
       name: "ANas",
       age: 12,
     },
-    {
-      key: 2,
-      name: "ANas",
-      age: 12,
-    },
-    {
-      key: 3,
-      name: "ANas",
-      age: 12,
-    },
-    {
-      key: 4,
-      name: "ANas",
-      age: 12,
-    },
-    {
-      key: 5,
-      name: "ANas",
-      age: 12,
-    },
   ];
 
   return (
