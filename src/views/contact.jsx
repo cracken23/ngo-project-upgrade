@@ -6,7 +6,7 @@ import "./Styles/contact.css";
 import GMap from "../components/GoogleMaps.jsx";
 import Contactimage from "./Images/IMG_1696.jpg";
 import NGOICON from "./../components/Images/GCAHF.png";
-import axios from "./../Axios/axios.js";
+import axios from "./../Axios/axios.jsx";
 
 const ButtonMailto = ({ mailto, label }) => {
   return (

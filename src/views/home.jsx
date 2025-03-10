@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Helmet } from "react-helmet";
 import axios from "../Axios/axios";
@@ -44,10 +43,10 @@ const Home = (props) => {
       {/* Hero Section */}
       <section className="section tw-py-10 tw-mb-8">
         <div className="container tw-text-center">
-          <h1 className="tw-text-4xl md:tw-text-5xl tw-font-bold tw-mb-4 gradient-text">
+          <h1 className="tw-text-4xl md:tw-text-5xl tw-font-bold tw-mb-4 gradient-text animate-fade-in">
             Welcome to Geriatric Care and Health Foundation
           </h1>
-          <p className="tw-text-lg tw-max-w-3xl tw-mx-auto tw-text-neutral-medium tw-mb-8">
+          <p className="tw-text-lg tw-max-w-2xl tw-mx-auto tw-text-neutral-medium tw-mb-8 animate-fade-in">
             Dedicated to enhancing the quality of life for elderly individuals through compassionate care and support
           </p>
         </div>
@@ -68,11 +67,11 @@ const Home = (props) => {
               style={{ 
                 backgroundImage: `url(${giftimg})`,
                 backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                height: '60vh',
+                backgroundPosition: '90% 50%',
+                height: '110vh',
               }}
             >
-              <div className="glass-effect tw-p-6 tw-absolute tw-bottom-8 tw-left-8 tw-max-w-md tw-rounded-lg">
+              <div className="glass-effect tw-p-6 tw-absolute tw-bottom-8 tw-left-8 tw-max-w-md tw-rounded-lg animate-slide-in">
                 <h2 className="tw-text-white tw-text-2xl tw-font-bold">Caring for Our Seniors</h2>
                 <p className="tw-text-white tw-opacity-90">Providing compassionate support to elderly individuals</p>
               </div>
@@ -82,14 +81,14 @@ const Home = (props) => {
               className="home-slider-slide1 swiper-slide"
               style={{ 
                 backgroundImage: `url(${outimg})`,
-                backgroundSize: 'cover',
+                
                 backgroundPosition: 'center',
-                height: '60vh',
+                height: '110vh',
               }}
             >
-              <div className="glass-effect tw-p-6 tw-absolute tw-bottom-8 tw-left-8 tw-max-w-md tw-rounded-lg">
-                <h2 className="tw-text-white tw-text-2xl tw-font-bold">Community Outreach</h2>
-                <p className="tw-text-white tw-opacity-90">Connecting with seniors in our community</p>
+              <div className="glass-effect tw-p-6 tw-absolute tw-bottom-8 tw-left-8 tw-max-w-md tw-rounded-lg animate-slide-in">
+                <h2 className="tw-text-black tw-text-2xl tw-font-bold">Community Outreach</h2>
+                <p className="tw-text-black tw-opacity-90">Connecting with seniors in our community</p>
               </div>
             </div>
             <div
@@ -99,10 +98,10 @@ const Home = (props) => {
                 backgroundImage: `url(${gift2})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                height: '60vh',
+                height: '110vh',
               }}
             >
-              <div className="glass-effect tw-p-6 tw-absolute tw-bottom-8 tw-left-8 tw-max-w-md tw-rounded-lg">
+              <div className="glass-effect tw-p-6 tw-absolute tw-bottom-8 tw-left-8 tw-max-w-md tw-rounded-lg animate-slide-in">
                 <h2 className="tw-text-white tw-text-2xl tw-font-bold">Supporting Health & Wellness</h2>
                 <p className="tw-text-white tw-opacity-90">Promoting healthy living for older adults</p>
               </div>
@@ -114,10 +113,10 @@ const Home = (props) => {
                 backgroundImage: `url(${bkimg})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                height: '60vh',
+                height: '110vh',
               }}
             >
-              <div className="glass-effect tw-p-6 tw-absolute tw-bottom-8 tw-left-8 tw-max-w-md tw-rounded-lg">
+              <div className="glass-effect tw-p-6 tw-absolute tw-bottom-8 tw-left-8 tw-max-w-md tw-rounded-lg animate-slide-in">
                 <h2 className="tw-text-white tw-text-2xl tw-font-bold">Building Stronger Communities</h2>
                 <p className="tw-text-white tw-opacity-90">Creating safe and supportive environments for seniors</p>
               </div>
@@ -154,8 +153,8 @@ const Home = (props) => {
       {/* Mission & Vision Section */}
       <div className="container">
         <div className="tw-flex md:tw-flex-row tw-flex-col tw-gap-8 tw-mb-16">
-          <div className="card tw-flex-1 tw-bg-gradient-to-br tw-from-[#eaffef] tw-to-[#d9f7e2] tw-border-l-4 tw-border-primary-color">
-            <h2 className="tw-text-2xl tw-font-bold tw-mb-4 tw-text-primary-dark">Our Mission</h2>
+          <div className="card tw-flex-1 tw-bg-gradient-to-br tw-from-[#eaffef] tw-to-[#d9f7e2] tw-border-l-4 tw-border-primary-color animate-fade-in">
+            <h2 className="tw-text-2xl tw-font-bold tw-mb-4 tw-text-[#e59d76]">Our Mission</h2>
             <p className="tw-text-lg">
               At Geriatric Care and Health Foundation, we are dedicated to enhancing
               the quality of life for elderly individuals by providing comprehensive
@@ -164,8 +163,8 @@ const Home = (props) => {
             </p>
           </div>
           
-          <div className="card tw-flex-1 tw-bg-gradient-to-br tw-from-[#eaffef] tw-to-[#d9f7e2] tw-border-l-4 tw-border-primary-color">
-            <h2 className="tw-text-2xl tw-font-bold tw-mb-4 tw-text-primary-dark">Vision Statement</h2>
+          <div className="card tw-flex-1 tw-bg-gradient-to-br tw-from-[#eaffef] tw-to-[#d9f7e2] tw-border-l-4 tw-border-primary-color animate-fade-in">
+            <h2 className="tw-text-2xl tw-font-bold tw-mb-4 tw-text-[#e59d76]">Vision Statement</h2>
             <p className="tw-text-lg">
               Our vision is to create a society where elderly people are valued, empowered, and integrated. 
               We aim to enhance the well-being of our seniors by addressing their physical, mental, and social needs. 
@@ -179,16 +178,16 @@ const Home = (props) => {
       <div className="section-colored tw-py-16 tw-mb-16">
         <div className="container">
           <div className="tw-flex md:tw-flex-row tw-flex-col tw-items-center tw-justify-center tw-gap-8">
-            <div className="card tw-text-center tw-bg-gradient-to-br tw-from-[#ea5507] tw-to-[#ff7a38] tw-text-white tw-flex-1 tw-max-w-xs">
-              <h2 className="tw-font-bold tw-text-2xl tw-mb-2">NGO members</h2>
-              <p className="tw-text-8xl tw-font-light tw-my-4">8</p>
-              <p className="tw-text-lg tw-opacity-80">Dedicated professionals</p>
+            <div className="card tw-text-center tw-bg-gradient-to-br tw-from-[#ea5507] tw-to-[#ff7a38] tw-text-white tw-flex-1 tw-max-w-xs animate-fade-in">
+              <h2 className="tw-font-bold tw-text-2xl tw-mb-2 tw-text-[#e59d76]">NGO members</h2>
+              <p className="tw-text-8xl tw-font-light tw-my-4 tw-text-black">8</p>
+              <p className="tw-text-lg tw-opacity-80 tw-text-black">Dedicated professionals</p>
             </div>
             
-            <div className="card tw-text-center tw-bg-gradient-to-br tw-from-[#ea5507] tw-to-[#ff7a38] tw-text-white tw-flex-1 tw-max-w-xs">
-              <h2 className="tw-font-bold tw-text-2xl tw-mb-2">Elderly Beneficiaries</h2>
-              <p className="tw-text-8xl tw-font-light tw-my-4">35</p>
-              <p className="tw-text-lg tw-opacity-80">Lives improved</p>
+            <div className="card tw-text-center tw-bg-gradient-to-br tw-from-[#ea5507] tw-to-[#ff7a38] tw-text-white tw-flex-1 tw-max-w-xs animate-fade-in">
+              <h2 className="tw-font-bold tw-text-2xl tw-mb-2 tw-text-[#e59d76]">Elderly Beneficiaries</h2>
+              <p className="tw-text-8xl tw-font-light tw-my-4 tw-text-black">35</p>
+              <p className="tw-text-lg tw-opacity-80 tw-text-black">Lives improved</p>
             </div>
           </div>
         </div>
@@ -196,13 +195,13 @@ const Home = (props) => {
 
       {/* Call to Action */}
       <div className="container tw-text-center tw-mb-16">
-        <h2 className="tw-text-3xl tw-font-bold tw-mb-4">Join Us in Making a Difference</h2>
-        <p className="tw-text-lg tw-max-w-2xl tw-mx-auto tw-mb-6">
+        <h2 className="tw-text-3xl tw-font-bold tw-mb-4 animate-fade-in">Join Us in Making a Difference</h2>
+        <p className="tw-text-lg tw-max-w-2xl tw-mx-auto tw-mb-6 animate-fade-in">
           Your support helps us continue our mission of providing care and support to elderly individuals in need.
         </p>
         <button 
           onClick={() => window.location.href = '/donation'} 
-          className="button-secondary tw-px-8 tw-py-3 tw-text-lg">
+          className="button-secondary tw-px-8 tw-py-3 tw-text-lg animate-fade-in">
           Donate Now
         </button>
       </div>

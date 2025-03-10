@@ -1,4 +1,3 @@
-
 .home-container {
   gap: var(--dl-space-space-twounits);
   width: 100%;
@@ -7,15 +6,15 @@
   min-height: 100vh;
   overflow-x: hidden;
   align-items: center;
-  /* padding-top: var(--dl-space-space-twounits); */
   flex-direction: column;
   justify-content: flex-start;
+  animation: fadeIn 1s ease-in-out;
 }
 .home-container01 {
-  width: 100%;
-  height: 400px;
+  width: 90%;
+  height: 1000px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 .home-slider {
   width: 100%;
@@ -28,26 +27,17 @@
   background-repeat: no-repeat;
   justify-content: center;
   background-position: center;
-  background-size: contain;
-  
-  
-  
+  background-size: cover;
+  animation: slideIn 1s ease-in-out;
 }
-.home-slider-slide1 {
-  display: flex;
-  align-items: center;
-  background-repeat: no-repeat;
-  justify-content: center;
-  background-position: center;
-  background-size: contain;
-}
+.home-slider-slide1,
 .home-slider-slide2 {
   display: flex;
   align-items: center;
   background-repeat: no-repeat;
   justify-content: center;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 .home-text02 {
   font-size: 50px;
@@ -318,6 +308,47 @@
   height: 46px;
   position: absolute;
   background-color: #18e291;
+}
+.card {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #eaffef, #d9f7e2);
+  animation: fadeIn 1s ease-in-out;
+}
+.glass-effect {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 20px;
+}
+.button-secondary {
+  background: linear-gradient(135deg, #ff7a38, #ea5507);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.button-secondary:hover {
+  background: linear-gradient(135deg, #ea5507, #ff7a38);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 @media(max-width: 767px) {
   .home-container03 {

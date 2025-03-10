@@ -7,12 +7,12 @@
   transition: 0.3s;
   border-width: 0px;
   border-radius: 0px;
-  background-color: #7d230d;
+  background-color: #e59d76;
   
 }
 
 .newbtn-button:active {
-  background-color: #ffc002;
+  background-color: #FFFFFF;
 }
 
 
