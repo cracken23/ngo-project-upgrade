@@ -16,7 +16,7 @@ import Donation from "./views/donation.jsx";
 import NotFound from "./views/not-found.jsx";
 import Header from "./components/headernew";
 import Footer from "./components/footer";
-import sucess from "./views/sucess.jsx";
+import Success from "./views/success.jsx";
 import Canceled from "./views/Canceled.jsx";
 import Info from "./views/Info.jsx";
 import { Redir } from "./views/Redir.jsx";
@@ -30,7 +30,7 @@ const App = () => {
         <Route component={Contact} exact path="/contact" />
         <Route component={About} exact path="/about" />
         <Route component={Donation} exact path="/donation" />
-        <Route component={sucess} exact path="/Success" />
+        <Route component={success} exact path="/Success" />
         <Route component={Canceled} exact path="/Canceled" />
         <Route component={Redir} exact path="/"/>
         <Route component={Info} exact path="/info" />
