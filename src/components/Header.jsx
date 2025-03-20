@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <header 
-      className={`tw-fixed tw-top-0 tw-left-0 tw-right-0 tw-z-50 tw-transition-all tw-duration-300 ${
+      className={`tw-fixed tw-top-0 tw-left-0 tw-right-0 tw-z-50 tw-transition-all tw-duration-300 tw-z-[999999999] ${
         scrolled ? "tw-bg-white/95 tw-backdrop-blur-md tw-shadow-md" : "tw-bg-white"
       }`}
     >

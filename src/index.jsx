@@ -9,16 +9,16 @@ import {
 } from "react-router-dom";
 
 import "./style.css";
-import Home from "./views/Home";
-import Contact from "./views/Contact";
-import About from "./views/About";
-import Donation from "./views/Donation";
-import NotFound from "./views/NotFound";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Success from "./views/Success";
-import Canceled from "./views/Canceled";
-import Info from "./views/Info";
+import Home from "./views/Home.jsx";
+import Contact from "./views/Contact.jsx";
+import About from "./views/About.jsx";
+import Donation from "./views/Donation.jsx";
+import NotFound from "./views/NotFound.jsx";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
+import Success from "./views/Success.jsx";
+import Canceled from "./views/Canceled.jsx";
+import Info from "./views/Info.jsx";
 import { Redir } from "./views/Redir.jsx";
 
 const App = () => {
