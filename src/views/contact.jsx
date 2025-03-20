@@ -1,5 +1,5 @@
-import { React, useState } from "react";
 
+import { React, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import "./Styles/contact.css";
@@ -11,7 +11,7 @@ import axios from "./../Axios/axios.jsx";
 const ButtonMailto = ({ mailto, label }) => {
   return (
     <Link
-      className="tw-px-4 tw-py-2 lg:tw-self-start  tw-self-center tw-bg-green-200 hover:tw-rounded-lg tw-transition-all tw-duration-300 hover:tw-shadow-2xl tw-break-all hover:-tw-translate-y-3 hover:tw-scale-105"
+      className="tw-px-6 tw-py-3 tw-bg-[#4CCD99] tw-text-white tw-rounded-lg hover:tw-bg-[#3ba57a] tw-transition-all tw-duration-300 tw-inline-block tw-text-center tw-font-medium"
       to="#"
       onClick={(e) => {
         window.location.href = mailto;
@@ -22,6 +22,7 @@ const ButtonMailto = ({ mailto, label }) => {
     </Link>
   );
 };
+
 const Contact = (props) => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -42,6 +43,10 @@ const Contact = (props) => {
       })
       .then((res) => {
         setshowSuccess(true);
+        setName("");
+        setPhone("");
+        setEmail("");
+        setMessage("");
         console.log(res);
       })
       .catch((err) => {
@@ -52,142 +57,139 @@ const Contact = (props) => {
   return (
     <>
       <Helmet>
-        <title>Geriatric Care and Health Foundation</title>
+        <title>Contact - GCAHF</title>
         <link rel="icon" href={NGOICON} />
-
-        <meta name="title" content="Geriatric Care and Health Foundation" />
-        <meta
-          name="description"
-          content="Dedicated to improving the health and well-being of older adults through high-quality, compassionate care."
-        />
-        <meta
-          name="keywords"
-          content="Geriatric Care, Health Foundation, Elderly Care, Senior Health"
-        />
-        <meta
-          property="og:title"
-          content="Geriatric Care and Health Foundation"
-        />
-        <meta
-          property="og:description"
-          content="Dedicated to improving the health and well-being of older adults through high-quality, compassionate care."
-        />
-
-        <meta property="og:url" content="https://geriatrichcf.com/" />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="description" content="Contact Geriatric Care and Health Foundation. Reach out to us for inquiries, partnerships, or to learn more about our services." />
+        <meta name="keywords" content="Contact, Geriatric Care, Health Foundation, Elderly Care, Contact Form" />
       </Helmet>
-      <div className="contact-container">
-        <Helmet>
-          <title>Contact - GCAHF</title>
-          <meta
-            property="og:title"
-            content="Contact - Agitated Brisk Chicken"
-          />
-        </Helmet>
-        <div className="contact-container01 ">
-          <div className="contact-container02">
-            <img alt="image" src={Contactimage} className="contact-image" />
+      
+      <div className="contact-container tw-py-10 tw-fade-in">
+        {/* Hero Section */}
+        <div className="tw-max-w-7xl tw-mx-auto tw-px-4 tw-mb-16">
+          <div className="tw-text-center tw-mb-12">
+            <h1 className="tw-text-4xl md:tw-text-5xl tw-font-bold tw-mb-4 tw-font-playfair">Get In Touch</h1>
+            <p className="tw-text-lg tw-max-w-3xl tw-mx-auto tw-text-neutral-medium">
+              Have questions about our services or want to get involved? We'd love to hear from you!
+            </p>
           </div>
-          <div className="contact-container03 tw-shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] tw-p-4 tw-mx-4">
-            <div className=" tw-flex tw-flex-col lg:tw-text-left ">
-              <h1 className=" tw-font-bold ">Contact Us</h1>
-              <span className="contact-text01">+91-9869166157</span>
-            </div>
-            <div className=" tw-flex tw-flex-col     lg:tw-text-left">
-              <h1 className=" tw-font-bold ">Address</h1>
-              <span className="contact-text01">
-                Fiza Apartment, B-001, Plot No 195, near MSEB OFFICE, Sector
-                12B, Bonkode, Kopar Khairane, Navi Mumbai, Maharashtra 400709
-              </span>
-            </div>
-            {/* <div className=" tw-flex tw-flex-col tw-text-center  md:tw-text-center lg:tw-text-left">
-            <h1 className=" tw-font-bold ">Call US</h1>
-            <span className="contact-text01">
-              Erat netus est hendrerit, nullam et quis ad cras porttitor
-              iaculis. Bibendum vulputate cras aenean.
-            </span>
-          </div> */}
-            <div className=" tw-flex tw-flex-col group    lg:tw-text-left">
-              <h1 className=" tw-font-bold  group-hover:-tw-translate-y-4 tw-transition-all tw-duration-200 ">
-                Mail
-              </h1>
-              <ButtonMailto
-                label="Write us an E-Mail"
-                mailto="mailto:vijaykumarsgaikwad@gmail.com"
+          
+          <div className="tw-grid md:tw-grid-cols-2 tw-gap-10">
+            <div className="tw-rounded-2xl tw-overflow-hidden tw-shadow-lg tw-h-[400px]">
+              <img 
+                src={Contactimage} 
+                alt="Contact" 
+                className="tw-w-full tw-h-full tw-object-cover" 
               />
-              <span className="contact-text01 tw-break-all">
-                vijaykumarsgaikwad@gmail.com
-              </span>
+            </div>
+            
+            <div className="tw-bg-white tw-rounded-2xl tw-shadow-lg tw-p-8 tw-flex tw-flex-col tw-justify-between">
+              <div className="tw-space-y-6">
+                <div>
+                  <h2 className="tw-text-2xl tw-font-bold tw-mb-2 tw-font-playfair tw-text-[#e59d76]">Contact Us</h2>
+                  <p className="tw-text-lg tw-font-medium">+91-9869166157</p>
+                </div>
+                
+                <div>
+                  <h2 className="tw-text-2xl tw-font-bold tw-mb-2 tw-font-playfair tw-text-[#4CCD99]">Address</h2>
+                  <p className="tw-text-neutral-medium">
+                    Fiza Apartment, B-001, Plot No 195, near MSEB OFFICE, Sector
+                    12B, Bonkode, Kopar Khairane, Navi Mumbai, Maharashtra 400709
+                  </p>
+                </div>
+                
+                <div>
+                  <h2 className="tw-text-2xl tw-font-bold tw-mb-2 tw-font-playfair tw-text-[#e59d76]">Email</h2>
+                  <p className="tw-text-neutral-medium tw-mb-3">vijaykumarsgaikwad@gmail.com</p>
+                  <ButtonMailto
+                    label="Write us an Email"
+                    mailto="mailto:vijaykumarsgaikwad@gmail.com"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="contact-container08 tw-gap-3 ">
-          <div className="contact-container09 hidden ngl:tw-flex">
-            <GMap />
-          </div>
-          <div className="tw-w-4/5 lg:tw-w-2/5">
-            {showSuccess&&<div className="tw-bg-[#82ed9b] tw-p-4 tw-text-center tw-mx-4 tw-mb-3 tw-shadow-md tw-w-full tw-animate-[pulse_2s_ease-in-out_2]">
-              <p>Enquiry has been recorded.</p>
-            </div>}
-            <div className="tw-flex tw-flex-col tw-justify-center tw-w-full tw-mx-4 tw-shadow-lg ">
+        {/* Map & Form Section */}
+        <div className="tw-max-w-7xl tw-mx-auto tw-px-4 tw-mb-16">
+          <div className="tw-grid md:tw-grid-cols-2 tw-gap-10">
+            <div className="tw-h-[500px] tw-rounded-2xl tw-overflow-hidden tw-shadow-lg">
+              <GMap />
+            </div>
+            
+            <div className="tw-bg-white tw-rounded-2xl tw-shadow-lg tw-p-8">
+              {showSuccess && (
+                <div className="tw-bg-[#4CCD99]/20 tw-border tw-border-[#4CCD99] tw-text-[#3ba57a] tw-p-4 tw-rounded-lg tw-mb-6 tw-text-center tw-animate-pulse">
+                  <p className="tw-font-medium">Thank you! Your inquiry has been received.</p>
+                </div>
+              )}
+              
+              <div className="tw-mb-6 tw-text-center">
+                <h2 className="tw-text-2xl tw-font-bold tw-mb-2 tw-font-playfair">Send Us a Message</h2>
+                <p className="tw-text-neutral-medium">Have a question or inquiry? Fill out the form below.</p>
+              </div>
+              
               <form
                 onSubmit={(e) => {
                   e.preventDefault();
                   handleSubmit();
                 }}
-                enctype="multipart/form-data"
-                className="tw-flex tw-flex-col tw-items-center tw-mx-4"
+                className="tw-space-y-6"
               >
-                <span className="contact-text12 lg:tw-self-center">
-                  Have a Enquiry? Write to us
-                </span>
-                <span className="contact-text13"></span>
-
-                <div className="tw-w-full tw-mx-3 tw-my-2">
-                  <label className="">Name</label>
+                <div>
+                  <label className="tw-block tw-mb-2 tw-font-medium">Name</label>
                   <input
                     required
+                    value={name}
                     onChange={(e) => setName(e.target.value)}
                     type="text"
-                    className=" input tw-w-full tw-peer tw-border-b-2 tw-border-0 tw-appearance-none tw-border-gray-300 focus:tw-outline-none focus:tw-border-blue-400"
+                    className="tw-w-full tw-px-4 tw-py-3 tw-rounded-lg tw-border tw-border-gray-300 focus:tw-border-[#4CCD99] focus:tw-ring-2 focus:tw-ring-[#4CCD99]/20 tw-outline-none tw-transition-all"
+                    placeholder="Your name"
                   />
                 </div>
-                <div className="tw-w-full tw-mx-3 tw-my-2">
-                  <label className="">Phone Number</label>
+                
+                <div>
+                  <label className="tw-block tw-mb-2 tw-font-medium">Phone Number</label>
                   <input
                     required
+                    value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                     type="number"
-                    className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none input tw-w-full tw-peer tw-border-b-2 tw-border-0 tw-appearance-none tw-border-gray-300 focus:tw-outline-none focus:tw-border-blue-400"
+                    className="tw-w-full tw-px-4 tw-py-3 tw-rounded-lg tw-border tw-border-gray-300 focus:tw-border-[#4CCD99] focus:tw-ring-2 focus:tw-ring-[#4CCD99]/20 tw-outline-none tw-transition-all [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                    placeholder="Your phone number"
                   />
                 </div>
-                <div className="tw-w-full tw-mx-3 tw-my-2">
-                  <label className="">Email</label>
+                
+                <div>
+                  <label className="tw-block tw-mb-2 tw-font-medium">Email</label>
                   <input
                     required
+                    value={email}
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                     onChange={(e) => setEmail(e.target.value)}
                     type="email"
-                    className=" input tw-w-full tw-peer tw-border-b-2 tw-border-0 tw-appearance-none tw-border-gray-300 focus:tw-outline-none focus:tw-border-blue-400"
+                    className="tw-w-full tw-px-4 tw-py-3 tw-rounded-lg tw-border tw-border-gray-300 focus:tw-border-[#4CCD99] focus:tw-ring-2 focus:tw-ring-[#4CCD99]/20 tw-outline-none tw-transition-all"
+                    placeholder="Your email address"
                   />
                 </div>
-                <span className="contact-text19">Message</span>
-                <textarea
-                  required
-                  onChange={(e) => {
-                    setMessage(e.target.value);
-                  }}
-                  className="tw-block tw-p-2.5 tw-w-full tw-text-sm tw-text-gray-900 tw-bg-gray-50 tw-rounded-lg tw-border tw-border-gray-300 tw-focus:ring-blue-500 tw-focus:border-blue-500 tw-dark:bg-gray-700 tw-dark:border-gray-600 tw-dark:placeholder-gray-400 tw-dark:text-white tw-dark:focus:ring-blue-500 tw-dark:focus:border-blue-500"
-                ></textarea>
+                
+                <div>
+                  <label className="tw-block tw-mb-2 tw-font-medium">Message</label>
+                  <textarea
+                    required
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    rows="4"
+                    className="tw-w-full tw-px-4 tw-py-3 tw-rounded-lg tw-border tw-border-gray-300 focus:tw-border-[#4CCD99] focus:tw-ring-2 focus:tw-ring-[#4CCD99]/20 tw-outline-none tw-transition-all resize-none"
+                    placeholder="Your message"
+                  ></textarea>
+                </div>
+                
                 <button
                   type="submit"
-                  className="tw-bg-[#82ed9b]  tw-w-full tw-px-4 tw-py-2 tw-my-4 tw-rounded-lg hover:tw-scale-105 hover:-tw-translate-y-2 hover:tw-shadow-xl tw-transition-all tw-duration-150"
+                  className="tw-w-full tw-bg-[#e59d76] hover:tw-bg-[#d48a63] tw-text-white tw-font-medium tw-px-6 tw-py-3 tw-rounded-lg tw-shadow tw-transition-all tw-duration-300"
                 >
-                  <span>
-                    <span>Submit</span>
-                    <br></br>
-                  </span>
+                  Submit Message
                 </button>
               </form>
             </div>

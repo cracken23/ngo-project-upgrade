@@ -5,10 +5,14 @@
   display: flex;
   position: relative;
   align-items: center;
-  padding: 2rem 0;
+  padding: 3rem 0;
   flex-direction: column;
   justify-content: center;
-  background-color: #121212;
+  background-color: #21272f;
+  background-image: linear-gradient(to right, rgba(33, 39, 47, 0.98), rgba(33, 39, 47, 0.95)), url('../../views/Images/test.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
 }
 
 .footer-container1 {
@@ -17,22 +21,40 @@
   display: flex;
   align-self: center;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   justify-content: center;
 }
 
 .footer-link {
   color: #ffffff;
-  opacity: 0.8;
+  opacity: 0.85;
   transition: all 0.3s ease;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.25rem;
+  font-weight: 500;
+  position: relative;
 }
 
 .footer-link:hover {
   opacity: 1;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   color: #e59d76;
+}
+
+.footer-link:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #e59d76;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover:after {
+  width: 70%;
+  left: 15%;
 }
 
 .footer-container2 {
@@ -47,17 +69,37 @@
 .footer-link1,
 .footer-link2 {
   color: #ffffff;
-  opacity: 0.8;
+  opacity: 0.85;
   transition: all 0.3s ease;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.25rem;
+  font-weight: 500;
+  position: relative;
 }
 
 .footer-link1:hover,
 .footer-link2:hover {
   opacity: 1;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   color: #e59d76;
+}
+
+.footer-link1:after,
+.footer-link2:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #e59d76;
+  transition: all 0.3s ease;
+}
+
+.footer-link1:hover:after,
+.footer-link2:hover:after {
+  width: 70%;
+  left: 15%;
 }
 
 .footer-container3 {
@@ -89,16 +131,21 @@
 }
 
 @media (max-width: 768px) {
+  .footer-container {
+    padding: 2.5rem 0;
+  }
+  
   .footer-container1 {
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
   }
   
   .footer-link,
   .footer-link1,
   .footer-link2 {
-    padding: 0.25rem 0.5rem;
-    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.95rem;
   }
   
   .footer-container3 {
@@ -108,11 +155,18 @@
 
 @media (max-width: 480px) {
   .footer-container {
-    padding: 1.5rem 0;
+    padding: 2rem 0;
   }
   
   .footer-container1,
   .footer-container3 {
-    gap: 1rem;
+    gap: 1.5rem;
+  }
+  
+  .footer-link,
+  .footer-link1,
+  .footer-link2 {
+    padding: 0.5rem;
+    font-size: 0.9rem;
   }
 }
