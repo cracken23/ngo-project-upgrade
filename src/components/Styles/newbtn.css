@@ -1,19 +1,36 @@
+
 .newbtn-container {
   display: flex;
   position: relative;
 }
+
 .newbtn-button {
-  box-shadow: 5px 5px 9px 0px #4c4c4c;
-  transition: 0.3s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
   border-width: 0px;
-  border-radius: 0px;
+  border-radius: 8px;
   background-color: #e59d76;
-  
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transform: translateY(0);
+}
+
+.newbtn-button:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  background-color: #ea8f5e;
 }
 
 .newbtn-button:active {
   background-color: #FFFFFF;
+  transform: translateY(1px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
-
+@media (max-width: 768px) {
+  .newbtn-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}

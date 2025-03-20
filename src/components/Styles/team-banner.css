@@ -1,54 +1,108 @@
+
 .team-banner-container {
   width: 196px;
-  height: 377px;
+  height: auto;
   display: flex;
   position: relative;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.team-banner-container:hover {
+  transform: translateY(-5px);
+}
+
 .team-banner-container1 {
   gap: var(--dl-space-space-unit);
   flex: 0 0 auto;
-  width: 198px;
-  height: 369px;
+  width: 100%;
+  height: auto;
   display: flex;
+  padding: 1.5rem;
   align-items: center;
+  border-radius: 12px;
   flex-direction: column;
   justify-content: center;
   background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
 }
+
+.team-banner-container1:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
 .team-banner-image {
   width: 90%;
-  height: 50%;
+  aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: var(--dl-radius-radius-round);
+  transition: transform 0.3s ease;
 }
+
+.team-banner-image:hover {
+  transform: scale(1.05);
+}
+
 .team-banner-text {
   color: #0737bb;
+  margin-top: 1rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
+
+.team-banner-container1:hover .team-banner-text {
+  color: #e59d76;
+}
+
 .team-banner-container2 {
   gap: var(--dl-space-space-halfunit);
   flex: 0 0 auto;
   width: auto;
   height: 24px;
   display: flex;
-  align-items: flex-start;
+  margin-top: 0.5rem;
+  align-items: center;
   justify-content: center;
 }
-.team-banner-icon {
-  width: 24px;
-  height: 24px;
-}
-.team-banner-icon2 {
-  width: 24px;
-  height: 24px;
-}
+
+.team-banner-icon,
+.team-banner-icon2,
 .team-banner-icon4 {
   width: 24px;
   height: 24px;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+.team-banner-icon:hover,
+.team-banner-icon2:hover,
+.team-banner-icon4:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
 
+@media (max-width: 768px) {
+  .team-banner-container {
+    width: 170px;
+  }
+  
+  .team-banner-text {
+    font-size: 0.9rem;
+  }
+  
+  .team-banner-icon,
+  .team-banner-icon2,
+  .team-banner-icon4 {
+    width: 20px;
+    height: 20px;
+  }
+}
 
-
+@media (max-width: 480px) {
+  .team-banner-container {
+    width: 150px;
+  }
+}
