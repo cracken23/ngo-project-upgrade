@@ -9,35 +9,39 @@ import {
 } from "react-router-dom";
 
 import "./style.css";
-import Home from "./views/home.jsx";
-import Contact from "./views/contact.jsx";
-import About from "./views/about.jsx";
-import Donation from "./views/donation.jsx";
-import NotFound from "./views/not-found.jsx";
-import Header from "./components/headernew";
-import Footer from "./components/footer";
-import Success from "./views/Success.jsx";
-import Canceled from "./views/Canceled.jsx";
-import Info from "./views/Info.jsx";
+import Home from "./views/Home";
+import Contact from "./views/Contact";
+import About from "./views/About";
+import Donation from "./views/Donation";
+import NotFound from "./views/NotFound";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Success from "./views/Success";
+import Canceled from "./views/Canceled";
+import Info from "./views/Info";
 import { Redir } from "./views/Redir.jsx";
 
 const App = () => {
   return (
     <Router>
-      <Header />
-      <Switch>
-        <Route component={Home} exact path="/Home" />
-        <Route component={Contact} exact path="/contact" />
-        <Route component={About} exact path="/about" />
-        <Route component={Donation} exact path="/donation" />
-        <Route component={Success} exact path="/Success" />
-        <Route component={Canceled} exact path="/Canceled" />
-        <Route component={Redir} exact path="/"/>
-        <Route component={Info} exact path="/info" />
-        <Route component={NotFound} path="**" />
-        <Redirect to="**" />
-      </Switch>
-      <Footer />
+      <div className="tw-flex tw-flex-col tw-min-h-screen">
+        <Header />
+        <main className="tw-flex-grow tw-pt-20">
+          <Switch>
+            <Route component={Home} exact path="/Home" />
+            <Route component={Contact} exact path="/contact" />
+            <Route component={About} exact path="/about" />
+            <Route component={Donation} exact path="/donation" />
+            <Route component={Success} exact path="/Success" />
+            <Route component={Canceled} exact path="/Canceled" />
+            <Route component={Redir} exact path="/"/>
+            <Route component={Info} exact path="/info" />
+            <Route component={NotFound} path="**" />
+            <Redirect to="**" />
+          </Switch>
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 };
